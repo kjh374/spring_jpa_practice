@@ -124,7 +124,7 @@ class ProductRepositoryTest {
         int newPrice = 6000;
         //when
         // jpa에서는 upate는 따로 메서드로 제공하지 않고,
-        // 조회한 후 setter로 변경하면 자동으로 udpate문이 나갑니다.
+        // 조회한 후 setter로 변경하면 자동으로 update문이 나갑니다.
         // 변경 후 save를 호출하세요. 그럼 update가 나갑니다.
         Optional<Product> product = productRepository.findById(id);
         product.ifPresent(p -> {
